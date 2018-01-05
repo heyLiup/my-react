@@ -2,6 +2,8 @@
 ### npm i 
 ### npm start 运行
 
+### 首先 context实现
+
 - 每一次通过this.props在组件中层层传递参数浪费性能，在顶层组件提供一个context，类似于全局变量，顶层组件的所有的子组件就可以访问到this.context
 
 - 由于context是全局的，对类型很严格，所以父子组件在接受和传递时都要约定数据类型，在最新的react中，propTypes是被抽离出来的，为了维### 持react的纯洁精简
