@@ -8,7 +8,7 @@
 
 - 父组件给子组件传递数据时
   ```
-getChildContext(){
+    getChildContext(){
         return {name:"lllll"}    //核心，将store放到context环境中
     }
 
@@ -16,8 +16,7 @@ getChildContext(){
          name:propsType.string
     }    
    ```
-
-   - 这样子组件在接收的时候
+ - 这样子组件在接收的时候
     ```
     static contextType={
         name:propsType.string
