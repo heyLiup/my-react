@@ -27,7 +27,7 @@
     在constructor里定义了props， context后
     就可与通过this.context.name  拿到context里的了，不管数据嵌套了多深
     
-    ### 第二步  实现redux里的createStore
+### 第二步  实现redux里的createStore
     
     - createStore接收一个reduce和middleWare或者initStore
       源码里还有一系列的类型监测赋值等，我们先就把重要的捡出来说
