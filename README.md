@@ -19,11 +19,13 @@
     }    
    ```
  - 这样子组件在接收的时候
-    ```
+ 
+```
     static contextTypes={
         name:propsType.string
     }
-    ```
+```
+    
     在constructor里定义了props， context后
     就可与通过this.context.name  拿到context里的了，不管数据嵌套了多深
     
@@ -32,7 +34,8 @@
     - createStore接收一个reduce和middleWare或者initStore
       源码里还有一系列的类型监测赋值等，我们先就把重要的捡出来说
       createStore里面提供了三个方法getState  subscribe   dispatch
-      ```
+      
+ ```
       export function createStore(reduce,middleWare,initStore){
         let currentState=initState||null;
         let currentListener=[];
@@ -51,5 +54,6 @@
         dispatch(initAction)  //初始化state
         return {dispatch,getState,subscribe}
       }
-      ```
+      
+ ```
 
